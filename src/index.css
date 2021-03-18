@@ -213,41 +213,148 @@ code {
 .highlight-angry {
   color: white;
   /* font-size: 30px; */
-  background: #ff4451 !important;
+  background: rgb(255, 68, 81, 0.9) !important;
 }
 
 .highlight-optimistic {
   color: white;
   /* font-size: 30px; */
-  background: #fcbb00 !important;
+  background: rgb(252, 187, 0, 0.9) !important;
 }
 
 .highlight-happy {
   color: white;
   /* font-size: 30px; */
-  background: #fb6f31 !important;
+  background: rgb(251, 111, 49, 0.9) !important;
 }
 
 .highlight-peaceful {
   color: white;
   /* font-size: 30px; */
-  background: #6ada54 !important;
+  background: rgb(106, 218, 84, 0.9) !important;
 }
 
 .highlight-excited {
   color: white;
   /* font-size: 30px; */
-  background: #c900e7 !important;
+  background: rgb(201, 0, 231, 0.9) !important;
 }
 
 .highlight-bored {
   color: white;
   /* font-size: 30px; */
-  background: #a5a5a5 !important;
+  background: rgb(165, 165, 165, 0.9) !important;
 }
 
 .highlight-sad {
   color: white;
   /* font-size: 30px; */
-  background: #27b4d6 !important;
+  background: rgb(39, 180, 214, 0.9) !important;
+}
+
+/* Mood Buttons */
+
+.mood-button {
+  position: relative;
+  outline: none;
+  text-decoration: none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  height: 60px;
+  width: 210px;
+  opacity: 1;
+}
+.mood-button span {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.7px;
+}
+.mood-button:hover {
+  animation: rotate 0.7s ease-in-out both;
+}
+.mood-button:hover span {
+  animation: storm 0.7s ease-in-out both;
+  animation-delay: 0.06s;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+  25% {
+    transform: rotate(3deg) translate3d(0, 0, 0);
+  }
+  50% {
+    transform: rotate(-3deg) translate3d(0, 0, 0);
+  }
+  75% {
+    transform: rotate(1deg) translate3d(0, 0, 0);
+  }
+  100% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+}
+@keyframes storm {
+  0% {
+    transform: translate3d(0, 0, 0) translateZ(0);
+  }
+  25% {
+    transform: translate3d(4px, 0, 0) translateZ(0);
+  }
+  50% {
+    transform: translate3d(-3px, 0, 0) translateZ(0);
+  }
+  75% {
+    transform: translate3d(2px, 0, 0) translateZ(0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) translateZ(0);
+  }
+}
+
+.peaceful {
+  color: #555;
+  border: 1px solid #6ada54;
+  background-color: rgb(106, 218, 84, 0.8);
+}
+
+.optimistic {
+  color: #555;
+  border: 1px solid #fcbb00;
+  background-color: rgb(252, 187, 0, 0.8);
+}
+
+.excited {
+  color: #555;
+  border: 1px solid #c900e7;
+  background-color: rgb(201, 0, 231, 0.8);
+}
+
+.happy {
+  color: #555;
+  border: 1px solid #fb6f31;
+  background-color: rgb(251, 111, 49, 0.8);
+}
+
+.sad {
+  color: #555;
+  border: 1px solid #27b4d6;
+  background-color: rgb(39, 180, 214, 0.8);
+}
+
+.angry {
+  color: #555;
+  border: 1px solid #ff4451;
+  background-color: rgb(255, 68, 81, 0.8);
+}
+
+.bored {
+  color: #555;
+  border: 1px solid #a5a5a5;
+  background-color: rgb(165, 165, 165, 0.8);
 }
