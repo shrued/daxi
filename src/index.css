@@ -18,6 +18,6 @@ code {
   color: black;
 }
 
-/* #basic-nav-dropdown:hover {
-  color: white;
-} */
+#nav-ddown:hover {
+  background-color: white;
+}
