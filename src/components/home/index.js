@@ -1,5 +1,5 @@
 import React from "react";
-import { CloudWave, WaveContent } from "./home";
+import { CloudWave, Placard, WaveContent } from "./home";
 
 export default function Home() {
   return (
@@ -26,6 +26,7 @@ export default function Home() {
           </div>
         </div>
       </CloudWave>
+      <Placard>Get and stay motivated using Daxi.</Placard>
     </>
   );
 }

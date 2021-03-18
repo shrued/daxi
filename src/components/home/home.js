@@ -15,3 +15,11 @@ export const WaveContent = styled.div`
   color: white;
   font-size: 3.76rem;
 `;
+
+export const Placard = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  padding: 40px;
+`;
