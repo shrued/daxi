@@ -31,7 +31,7 @@ export const NavItem = styled.div`
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #cf93c8;
+    background-color: #add8e6;
     visibility: hidden;
     transition: all 0.3s ease-in-out;
   }
