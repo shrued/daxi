@@ -23,3 +23,12 @@ export const Placard = styled.div`
   font-size: 40px;
   padding: 40px;
 `;
+
+export const Tenets = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 40px;
+`;

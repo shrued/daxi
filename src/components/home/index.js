@@ -1,5 +1,5 @@
 import React from "react";
-import { CloudWave, Placard, WaveContent } from "./home";
+import { CloudWave, Placard, Tenets, WaveContent } from "./home";
 
 export default function Home() {
   return (
@@ -27,6 +27,58 @@ export default function Home() {
         </div>
       </CloudWave>
       <Placard>Get and stay motivated using Daxi.</Placard>
+      <Tenets>
+        <div class="cards">
+          <div class="card content">
+            <div class="card-content">
+              <div class="card-img">
+                <img
+                  src="https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"
+                  alt="Mood Tracking Board"
+                />
+              </div>
+              <div class="card-label">Mood Tracking Board</div>
+              <div class="card-title">
+                Record your mood everyday to get a monthly report and monitor
+                your progress.
+              </div>
+            </div>
+          </div>
+          <div class="card content">
+            <div class="card-content">
+              <div class="card-img">
+                <img
+                  src="https://images.unsplash.com/photo-1547394765-185e1e68f34e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+                  alt="Reflection"
+                />
+              </div>
+              <div class="card-label">Reflection</div>
+              <div class="card-title">
+                Record one question everyday. One year later, you will be asked
+                the same question for self-reflection.
+              </div>
+            </div>
+          </div>
+          <div class="card content">
+            <div class="card-content">
+              <div class="card-img">
+                <img
+                  src="https://images.unsplash.com/photo-1519326844852-704caea5679e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2034&q=80"
+                  alt="Mood Path"
+                />
+              </div>
+              <div class="card-label">Mood Path</div>
+              <div class="card-title">
+                Log your mental health and mood by answering questions about
+                your emotional well-being.
+              </div>
+            </div>
+          </div>
+          <div class="card form">
+            <div class="form-title">Sign Up</div>
+          </div>
+        </div>
+      </Tenets>
     </>
   );
 }
