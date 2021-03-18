@@ -3,9 +3,11 @@
 // #cf93c8 - Pink/Lilac
 // #996d94 - Dark Pink/Lilac
 
-// #24202a - Darker
-// #8a4f65 - Darker
+// #181818 - Dark
+// #555 - Grey
+// #add8e6 - lblue
 
+// #8a4f65 - Darker
 // #c8a2c8 - Lilac
 
 // #ff4451 - angry
@@ -23,6 +25,6 @@ export const GlobalStyles = createGlobalStyle`
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: white;
-  color: #24202a;
+  color: #181818;
   font-size: 16px;
 }`;
