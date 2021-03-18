@@ -5,3 +5,5 @@
 
 // #24202a - Darker
 // #8a4f65 - Darker
+
+// #c8a2c8 - Lilac
