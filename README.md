@@ -6,3 +6,10 @@ A significant percent of the world's population is struggling with mental and sl
 ## Tech Stack
 React <br>
 Firebase
+
+## Other tech used
+Bootstrap <br>
+React Bootstrap <br>
+Ant Design <br>
+Styled Components <br>
+React Router Dom <br>
