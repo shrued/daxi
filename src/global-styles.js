@@ -8,6 +8,13 @@
 
 // #c8a2c8 - Lilac
 
+// #ff4451 - angry
+// #fcbb00 - optimistic
+// #fb6f31 - happy
+// #6ada54 - peaceful
+// #c900e7 - excited
+// #a5a5a5 - bored
+// #27b4d6 - sad
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`

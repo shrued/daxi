@@ -207,3 +207,47 @@ code {
   filter: blur(3px);
   opacity: 0.7;
 }
+
+/* Calendar */
+
+.highlight-angry {
+  color: white;
+  /* font-size: 30px; */
+  background: #ff4451 !important;
+}
+
+.highlight-optimistic {
+  color: white;
+  /* font-size: 30px; */
+  background: #fcbb00 !important;
+}
+
+.highlight-happy {
+  color: white;
+  /* font-size: 30px; */
+  background: #fb6f31 !important;
+}
+
+.highlight-peaceful {
+  color: white;
+  /* font-size: 30px; */
+  background: #6ada54 !important;
+}
+
+.highlight-excited {
+  color: white;
+  /* font-size: 30px; */
+  background: #c900e7 !important;
+}
+
+.highlight-bored {
+  color: white;
+  /* font-size: 30px; */
+  background: #a5a5a5 !important;
+}
+
+.highlight-sad {
+  color: white;
+  /* font-size: 30px; */
+  background: #27b4d6 !important;
+}
