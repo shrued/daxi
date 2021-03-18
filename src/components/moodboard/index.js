@@ -20,6 +20,91 @@ export default function MoodBoard() {
   const peaceful = ["12-03-2021", "16-03-2021"];
   const happy = ["17-03-2021", "18-03-2021"];
 
+  function setPeaceful() {
+    var today = new Date();
+    var time =
+      today.getDate() +
+      "-" +
+      "0" +
+      (today.getMonth() + 1) +
+      "-" +
+      today.getFullYear();
+    peaceful.push(time);
+  }
+
+  function setOptimistic() {
+    var today = new Date();
+    var time =
+      today.getDate() +
+      "-" +
+      "0" +
+      (today.getMonth() + 1) +
+      "-" +
+      today.getFullYear();
+    optimistic.push(time);
+  }
+
+  function setExcited() {
+    var today = new Date();
+    var time =
+      today.getDate() +
+      "-" +
+      "0" +
+      (today.getMonth() + 1) +
+      "-" +
+      today.getFullYear();
+    excited.push(time);
+  }
+
+  function setHappy() {
+    var today = new Date();
+    var time =
+      today.getDate() +
+      "-" +
+      "0" +
+      (today.getMonth() + 1) +
+      "-" +
+      today.getFullYear();
+    happy.push(time);
+  }
+
+  function setSad() {
+    var today = new Date();
+    var time =
+      today.getDate() +
+      "-" +
+      "0" +
+      (today.getMonth() + 1) +
+      "-" +
+      today.getFullYear();
+    sad.push(time);
+    console.log(sad);
+  }
+
+  function setAngry() {
+    var today = new Date();
+    var time =
+      today.getDate() +
+      "-" +
+      "0" +
+      (today.getMonth() + 1) +
+      "-" +
+      today.getFullYear();
+    angry.push(time);
+  }
+
+  function setBored() {
+    var today = new Date();
+    var time =
+      today.getDate() +
+      "-" +
+      "0" +
+      (today.getMonth() + 1) +
+      "-" +
+      today.getFullYear();
+    bored.push(time);
+  }
+
   return (
     <>
       <Container>
@@ -28,25 +113,34 @@ export default function MoodBoard() {
         </QuestionContainer>
         <MoodBoardContainer>
           <MoodButtons>
-            <button className="mood-button peaceful">
+            <button
+              className="mood-button peaceful"
+              onClick={() => setPeaceful()}
+            >
               <span>Peaceful</span>
             </button>
-            <button className="mood-button optimistic">
+            <button
+              className="mood-button optimistic"
+              onClick={() => setOptimistic()}
+            >
               <span>Optimistic</span>
             </button>
-            <button className="mood-button excited">
+            <button
+              className="mood-button excited"
+              onClick={() => setExcited()}
+            >
               <span>Excited</span>
             </button>
-            <button className="mood-button happy">
+            <button className="mood-button happy" onClick={() => setHappy()}>
               <span>Happy</span>
             </button>
-            <button className="mood-button sad">
+            <button className="mood-button sad" onClick={() => setSad()}>
               <span>Sad</span>
             </button>
-            <button className="mood-button angry">
+            <button className="mood-button angry" onClick={() => setAngry()}>
               <span>Angry</span>
             </button>
-            <button className="mood-button bored">
+            <button className="mood-button bored" onClick={() => setBored()}>
               <span>Bored</span>
             </button>
           </MoodButtons>
