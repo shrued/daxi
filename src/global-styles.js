@@ -7,3 +7,15 @@
 // #8a4f65 - Darker
 
 // #c8a2c8 - Lilac
+
+import { createGlobalStyle } from "styled-components";
+
+export const GlobalStyles = createGlobalStyle`
+  html, body {
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: white;
+  color: #24202a;
+  font-size: 16px;
+}`;
