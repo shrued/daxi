@@ -21,3 +21,12 @@ code {
 #nav-ddown:hover {
   background-color: white;
 }
+
+/* Cloud Wave */
+
+#wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
