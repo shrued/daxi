@@ -30,7 +30,7 @@ const SignIn = () => {
             type="email"
             name="userEmail"
             value={email}
-            placeholder="E.g: faruq123@gmail.com"
+            placeholder=""
             id="userEmail"
             onChange={(event) => onChangeHandler(event)}
           />
@@ -39,7 +39,7 @@ const SignIn = () => {
             type="password"
             name="userPassword"
             value={password}
-            placeholder="Your Password"
+            placeholder=""
             id="userPassword"
             onChange={(event) => onChangeHandler(event)}
           />
