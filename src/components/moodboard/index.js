@@ -1,6 +1,8 @@
 import moment from "moment";
 import React, { useState } from "react";
 import Calendar from "react-calendar";
+import useForceUpdate from "use-force-update";
+
 import {
   Board,
   Container,
@@ -12,13 +14,28 @@ import {
 
 export default function MoodBoard() {
   const [value, onChange] = useState(new Date());
-  const sad = ["04-03-2021", "13-03-2021", "05-03-2021"];
-  const angry = ["06-03-2021", "01-03-2021", "08-03-2021"];
-  const optimistic = ["14-03-2021", "09-03-2021", "10-03-2021"];
-  const bored = ["03-03-2021", "02-03-2021", "15-03-2021"];
-  const excited = ["07-03-2021", "11-03-2021"];
-  const peaceful = ["12-03-2021", "16-03-2021"];
-  const happy = ["17-03-2021", "18-03-2021"];
+
+  const [sad, setsad] = useState(["04-03-2021", "13-03-2021", "05-03-2021"]);
+  const [angry, setangry] = useState([
+    "06-03-2021",
+    "01-03-2021",
+    "08-03-2021",
+  ]);
+  const [optimistic, setoptimistic] = useState([
+    "14-03-2021",
+    "09-03-2021",
+    "10-03-2021",
+  ]);
+  const [bored, setbored] = useState([
+    "03-03-2021",
+    "02-03-2021",
+    "15-03-2021",
+  ]);
+  const [excited, setexcited] = useState(["07-03-2021", "11-03-2021"]);
+  const [peaceful, setpeaceful] = useState(["12-03-2021", "16-03-2021"]);
+  const [happy, sethappy] = useState(["17-03-2021", "18-03-2021"]);
+
+  const forceUpdate = useForceUpdate();
 
   function setPeaceful() {
     var today = new Date();
@@ -30,6 +47,7 @@ export default function MoodBoard() {
       "-" +
       today.getFullYear();
     peaceful.push(time);
+    forceUpdate();
   }
 
   function setOptimistic() {
@@ -42,6 +60,7 @@ export default function MoodBoard() {
       "-" +
       today.getFullYear();
     optimistic.push(time);
+    forceUpdate();
   }
 
   function setExcited() {
@@ -54,6 +73,7 @@ export default function MoodBoard() {
       "-" +
       today.getFullYear();
     excited.push(time);
+    forceUpdate();
   }
 
   function setHappy() {
@@ -66,6 +86,7 @@ export default function MoodBoard() {
       "-" +
       today.getFullYear();
     happy.push(time);
+    forceUpdate();
   }
 
   function setSad() {
@@ -78,7 +99,7 @@ export default function MoodBoard() {
       "-" +
       today.getFullYear();
     sad.push(time);
-    console.log(sad);
+    forceUpdate();
   }
 
   function setAngry() {
@@ -91,6 +112,7 @@ export default function MoodBoard() {
       "-" +
       today.getFullYear();
     angry.push(time);
+    forceUpdate();
   }
 
   function setBored() {
@@ -103,6 +125,7 @@ export default function MoodBoard() {
       "-" +
       today.getFullYear();
     bored.push(time);
+    forceUpdate();
   }
 
   return (
@@ -180,7 +203,7 @@ export default function MoodBoard() {
                   return "highlight-happy";
                 }
               }}
-            ></Calendar>
+            />
           </Board>
         </MoodBoardContainer>
       </Container>
