@@ -4,7 +4,17 @@ import {
   generateUserDocument,
   signInWithGoogle,
 } from "../../firebase/firebase";
-import { Container, FormContainer, SubContainer } from "./signup";
+import {
+  Container,
+  Error,
+  FormButton,
+  FormContainer,
+  FormInput,
+  FormLabel,
+  SubContainer,
+  SubTitle,
+  Title,
+} from "./signup";
 
 const SignUp = () => {
   const [email, setEmail] = useState("");
@@ -47,12 +57,12 @@ const SignUp = () => {
 
   return (
     <Container>
-      <h1>Sign Up</h1>
       <SubContainer>
-        {error !== null && <div>{error}</div>}
+        <Title>Sign Up</Title>
+        {error !== null && <Error>{error}</Error>}
         <FormContainer>
-          <label htmlFor="displayName">Display Name:</label>
-          <input
+          <FormLabel htmlFor="displayName">Display Name:</FormLabel>
+          <FormInput
             type="text"
             name="displayName"
             value={displayName}
@@ -60,8 +70,8 @@ const SignUp = () => {
             id="displayName"
             onChange={(event) => onChangeHandler(event)}
           />
-          <label htmlFor="userEmail">Email:</label>
-          <input
+          <FormLabel htmlFor="userEmail">Email:</FormLabel>
+          <FormInput
             type="email"
             name="userEmail"
             value={email}
@@ -69,8 +79,8 @@ const SignUp = () => {
             id="userEmail"
             onChange={(event) => onChangeHandler(event)}
           />
-          <label htmlFor="userPassword">Password:</label>
-          <input
+          <FormLabel htmlFor="userPassword">Password:</FormLabel>
+          <FormInput
             type="password"
             name="userPassword"
             value={password}
@@ -78,16 +88,16 @@ const SignUp = () => {
             id="userPassword"
             onChange={(event) => onChangeHandler(event)}
           />
-          <button
+          <FormButton
             onClick={(event) => {
               createUserWithEmailAndPasswordHandler(event, email, password);
             }}
           >
             Sign up
-          </button>
+          </FormButton>
         </FormContainer>
         <p>or</p>
-        <button
+        <FormButton
           onClick={() => {
             try {
               signInWithGoogle();
@@ -97,11 +107,10 @@ const SignUp = () => {
           }}
         >
           Sign In with Google
-        </button>
-        <p>
-          Already have an account?
-          <a href="/">Sign in here</a>
-        </p>
+        </FormButton>
+        <SubTitle>
+          Already have an account? <a href="/">Sign in here.</a>
+        </SubTitle>
       </SubContainer>
     </Container>
   );
