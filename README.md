@@ -13,3 +13,12 @@ A significant percent of the world's population is struggling with mental and sl
 - Ant Design <br>
 - Styled Components <br>
 - React Router Dom <br>
+- React Simple Chatbot
+
+## Features
+- Mood Tracking Board <br>
+- Reflection <br>
+- Mood Path <br>
+- Articles <br>
+- Chatbot <br>
+- Sign in/Sign up with email/password and Google sign in including forgot password
