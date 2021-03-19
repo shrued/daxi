@@ -1,6 +1,16 @@
 import React, { useState } from "react";
 import { auth } from "../../firebase/firebase";
-import { Container, FormContainer, SubContainer } from "./passwordReset";
+import {
+  Container,
+  FormContainer,
+  SubContainer,
+  Title,
+  Error,
+  FormLabel,
+  FormInput,
+  FormButton,
+  SubTitle,
+} from "./passwordReset";
 
 const PasswordReset = () => {
   const [email, setEmail] = useState("");
@@ -31,13 +41,13 @@ const PasswordReset = () => {
 
   return (
     <Container>
-      <h1>Reset your Password</h1>
       <SubContainer>
+        <Title>Reset your Password</Title>
         <FormContainer action="">
           {emailHasBeenSent && <div>An email has been sent to you!</div>}
-          {error !== null && <div>{error}</div>}
-          <label htmlFor="userEmail">Email:</label>
-          <input
+          {error !== null && <Error>{error}</Error>}
+          <FormLabel htmlFor="userEmail">Email:</FormLabel>
+          <FormInput
             type="email"
             name="userEmail"
             id="userEmail"
@@ -45,15 +55,17 @@ const PasswordReset = () => {
             placeholder="Input your email"
             onChange={onChangeHandler}
           />
-          <button
+          <FormButton
             onClick={(event) => {
               sendResetEmail(event);
             }}
           >
             Send me a reset link
-          </button>
+          </FormButton>
         </FormContainer>
-        <a href="/">&larr; back to sign in page</a>
+        <SubTitle>
+          <a href="/">&larr; back to sign in page</a>
+        </SubTitle>
       </SubContainer>
     </Container>
   );
