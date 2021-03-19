@@ -2,12 +2,14 @@ import React, { useState } from "react";
 import { auth, signInWithGoogle } from "../../firebase/firebase";
 import {
   Container,
+  Error,
   FormButton,
   FormContainer,
   FormInput,
   FormLabel,
   SubContainer,
   SubTitle,
+  Text,
   Title,
 } from "./signin";
 
@@ -38,7 +40,7 @@ const SignIn = () => {
     <Container>
       <SubContainer>
         <Title>Sign In</Title>
-        {error !== null && <SubTitle>{error}</SubTitle>}
+        {error !== null && <Error>{error}</Error>}
         <FormContainer>
           <FormLabel htmlFor="userEmail">Email:</FormLabel>
           <FormInput
@@ -58,6 +60,9 @@ const SignIn = () => {
             id="userPassword"
             onChange={(event) => onChangeHandler(event)}
           />
+          <Text>
+            <a href="/passwordReset">Forgot Password?</a>
+          </Text>
           <FormButton
             onClick={(event) => {
               signInWithEmailAndPasswordHandler(event, email, password);
@@ -75,8 +80,7 @@ const SignIn = () => {
           Sign in with Google
         </FormButton>
         <SubTitle>
-          Don't have an account? <a href="/signup">Sign up here.</a> <br />{" "}
-          <a href="/passwordReset">Forgot Password?</a>
+          Don't have an account? <a href="/signup">Sign up here.</a>
         </SubTitle>
       </SubContainer>
     </Container>

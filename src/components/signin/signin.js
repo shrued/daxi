@@ -2,10 +2,16 @@ import styled from "styled-components/macro";
 
 export const Container = styled.div`
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: pink;
+  background-image: linear-gradient(
+    to right bottom,
+    #d2e0dd,
+    #c0dbd8,
+    #acd6d6,
+    #98d0d6,
+    #83cad8
+  );
 `;
 
 export const SubContainer = styled.div`
@@ -13,11 +19,16 @@ export const SubContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #eee;
   border-radius: 5px;
+  background: white;
   height: 100%;
+  width: 30%;
   padding: 30px;
-  margin: 50px;
+  margin: 40px;
+
+  @media (max-width: 900px) {
+    width: auto;
+  }
 `;
 
 export const Title = styled.p`
@@ -42,6 +53,22 @@ export const SubTitle = styled.p`
     text-decoration: none !important;
     color: #181818;
   }
+`;
+
+export const Text = styled.p`
+  a {
+    text-decoration: none !important;
+    color: #181818;
+  }
+`;
+
+export const Error = styled.p`
+  text-align: center;
+  line-height: 1em;
+  font-weight: 100;
+  letter-spacing: 0px;
+  letter-spacing: 0.02rem;
+  color: #e45151;
 `;
 
 export const FormContainer = styled.form`
