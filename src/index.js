@@ -6,11 +6,14 @@ import "react-calendar/dist/Calendar.css";
 import { GlobalStyles } from "./global-styles";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import UserProvider from "./firebase/userProvider";
 
 ReactDOM.render(
   <React.StrictMode>
     <GlobalStyles />
-    <App />
+    <UserProvider>
+      <App />
+    </UserProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );

@@ -11,14 +11,22 @@ import MoodPath from "./components/moodpath";
 import Reflection from "./components/reflection";
 import Therapy from "./components/therapy";
 import PageNotFound from "./components/404";
+import SignUp from "./components/signup";
+import SignIn from "./components/signin";
 
 export default function App() {
-  return (
+  const user = null;
+
+  return user ? (
+    <Home />
+  ) : (
     <>
       <Layout>
         <Router>
           <Switch>
-            <Route exact path="/" component={Home} />
+            <Route exact path="/" component={SignIn} />
+            <Route path="/home" component={Home} />
+            <Route path="/signup" component={SignUp} />
             <Route path="/about" component={About} />
             <Route path="/articles" component={Articles} />
             <Route path="/help" component={Help} />
