@@ -16,6 +16,15 @@ export const WaveContent = styled.div`
   font-size: 3.76rem;
 `;
 
+export const Hello = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  padding: 40px;
+  font-style: italic;
+`;
+
 export const Placard = styled.div`
   display: flex;
   justify-content: center;

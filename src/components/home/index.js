@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { UserContext } from "../../providers/userProvider";
 import { auth } from "../../firebase/firebase";
-import { CloudWave, Placard, Tenets, WaveContent } from "./home";
+import { CloudWave, Placard, Tenets, WaveContent, Hello } from "./home";
 
 export default function Home() {
   const user = useContext(UserContext);
@@ -31,7 +31,10 @@ export default function Home() {
           </div>
         </div>
       </CloudWave>
-      <Placard>Hi {displayName}!</Placard>
+      <Hello>
+        Hi {displayName}! If you're here, you already took the first step at
+        getting better.
+      </Hello>
       <Placard>Get and stay motivated using Daxi.</Placard>
       <button
         onClick={() => {
