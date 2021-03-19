@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Layout from "./components/layout";
@@ -13,19 +13,21 @@ import Therapy from "./components/therapy";
 import PageNotFound from "./components/404";
 import SignUp from "./components/signup";
 import SignIn from "./components/signin";
+import { UserContext } from "./providers/userProvider";
 
 export default function App() {
-  const user = null;
+  const user = useContext(UserContext);
 
   return user ? (
-    <Home />
+    <Layout>
+      <Home />
+    </Layout>
   ) : (
     <>
       <Layout>
         <Router>
           <Switch>
             <Route exact path="/" component={SignIn} />
-            <Route path="/home" component={Home} />
             <Route path="/signup" component={SignUp} />
             <Route path="/about" component={About} />
             <Route path="/articles" component={Articles} />

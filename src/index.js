@@ -6,7 +6,7 @@ import "react-calendar/dist/Calendar.css";
 import { GlobalStyles } from "./global-styles";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import UserProvider from "./firebase/userProvider";
+import UserProvider from "./providers/userProvider";
 
 ReactDOM.render(
   <React.StrictMode>

@@ -1,12 +1,18 @@
 import React, { useState } from "react";
+import { auth, signInWithGoogle } from "../../firebase/firebase";
 import { Container, FormContainer, SubContainer } from "./signin";
 
 const SignIn = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState(null);
+
   const signInWithEmailAndPasswordHandler = (event, email, password) => {
     event.preventDefault();
+    auth.signInWithEmailAndPassword(email, password).catch((error) => {
+      setError("Error signing in with password and email!");
+      console.error("Error signing in with password and email", error);
+    });
   };
 
   const onChangeHandler = (event) => {
@@ -52,7 +58,13 @@ const SignIn = () => {
           </button>
         </FormContainer>
         <p>or</p>
-        <button>Sign in with Google</button>
+        <button
+          onClick={() => {
+            signInWithGoogle();
+          }}
+        >
+          Sign in with Google
+        </button>
         <p>
           Don't have an account? <a href="/signup">Sign up here</a> <br />{" "}
           {/* <a

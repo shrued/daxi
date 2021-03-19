@@ -1,4 +1,9 @@
 import React, { useState } from "react";
+import {
+  auth,
+  generateUserDocument,
+  signInWithGoogle,
+} from "../../firebase/firebase";
 import { Container, FormContainer, SubContainer } from "./signup";
 
 const SignUp = () => {
@@ -6,14 +11,31 @@ const SignUp = () => {
   const [password, setPassword] = useState("");
   const [displayName, setDisplayName] = useState("");
   const [error, setError] = useState(null);
-  const createUserWithEmailAndPasswordHandler = (event, email, password) => {
+
+  const createUserWithEmailAndPasswordHandler = async (
+    event,
+    email,
+    password
+  ) => {
     event.preventDefault();
+    try {
+      const { user } = await auth.createUserWithEmailAndPassword(
+        email,
+        password
+      );
+      generateUserDocument(user, { displayName });
+    } catch (error) {
+      setError("Error Signing up with email and password");
+    }
+
     setEmail("");
     setPassword("");
     setDisplayName("");
   };
+
   const onChangeHandler = (event) => {
     const { name, value } = event.currentTarget;
+
     if (name === "userEmail") {
       setEmail(value);
     } else if (name === "userPassword") {
@@ -22,6 +44,7 @@ const SignUp = () => {
       setDisplayName(value);
     }
   };
+
   return (
     <Container>
       <h1>Sign Up</h1>
@@ -64,7 +87,17 @@ const SignUp = () => {
           </button>
         </FormContainer>
         <p>or</p>
-        <button>Sign In with Google</button>
+        <button
+          onClick={() => {
+            try {
+              signInWithGoogle();
+            } catch (error) {
+              console.error("Error signing in with Google", error);
+            }
+          }}
+        >
+          Sign In with Google
+        </button>
         <p>
           Already have an account?
           <a href="/">Sign in here</a>
