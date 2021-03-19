@@ -1,6 +1,15 @@
 import React, { useState } from "react";
 import { auth, signInWithGoogle } from "../../firebase/firebase";
-import { Container, FormContainer, SubContainer } from "./signin";
+import {
+  Container,
+  FormButton,
+  FormContainer,
+  FormInput,
+  FormLabel,
+  SubContainer,
+  SubTitle,
+  Title,
+} from "./signin";
 
 const SignIn = () => {
   const [email, setEmail] = useState("");
@@ -27,12 +36,12 @@ const SignIn = () => {
 
   return (
     <Container>
-      <h1>Sign In</h1>
       <SubContainer>
-        {error !== null && <div>{error}</div>}
+        <Title>Sign In</Title>
+        {error !== null && <SubTitle>{error}</SubTitle>}
         <FormContainer>
-          <label htmlFor="userEmail">Email:</label>
-          <input
+          <FormLabel htmlFor="userEmail">Email:</FormLabel>
+          <FormInput
             type="email"
             name="userEmail"
             value={email}
@@ -40,8 +49,8 @@ const SignIn = () => {
             id="userEmail"
             onChange={(event) => onChangeHandler(event)}
           />
-          <label htmlFor="userPassword">Password:</label>
-          <input
+          <FormLabel htmlFor="userPassword">Password:</FormLabel>
+          <FormInput
             type="password"
             name="userPassword"
             value={password}
@@ -49,26 +58,26 @@ const SignIn = () => {
             id="userPassword"
             onChange={(event) => onChangeHandler(event)}
           />
-          <button
+          <FormButton
             onClick={(event) => {
               signInWithEmailAndPasswordHandler(event, email, password);
             }}
           >
             Sign in
-          </button>
+          </FormButton>
         </FormContainer>
-        <p>or</p>
-        <button
+        <SubTitle>or</SubTitle>
+        <FormButton
           onClick={() => {
             signInWithGoogle();
           }}
         >
           Sign in with Google
-        </button>
-        <p>
-          Don't have an account? <a href="/signup">Sign up here</a> <br />{" "}
+        </FormButton>
+        <SubTitle>
+          Don't have an account? <a href="/signup">Sign up here.</a> <br />{" "}
           <a href="/passwordReset">Forgot Password?</a>
-        </p>
+        </SubTitle>
       </SubContainer>
     </Container>
   );
