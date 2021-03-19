@@ -12,7 +12,7 @@ export const QuestionContainer = styled.div`
 `;
 
 export const Question = styled.p`
-  font-size: 30px;
+  font-size: 38px;
   color: #181818;
 `;
 
