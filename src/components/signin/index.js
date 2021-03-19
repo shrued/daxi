@@ -67,12 +67,7 @@ const SignIn = () => {
         </button>
         <p>
           Don't have an account? <a href="/signup">Sign up here</a> <br />{" "}
-          {/* <a
-            href="/passwordReset"
-            className="text-blue-500 hover:text-blue-600"
-          >
-            Forgot Password?
-          </a> */}
+          <a href="/passwordReset">Forgot Password?</a>
         </p>
       </SubContainer>
     </Container>

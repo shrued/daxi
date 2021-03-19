@@ -13,6 +13,7 @@ import Therapy from "./components/therapy";
 import PageNotFound from "./components/404";
 import SignUp from "./components/signup";
 import SignIn from "./components/signin";
+import PasswordReset from "./components/passwordReset";
 import { UserContext } from "./providers/userProvider";
 
 export default function App() {
@@ -29,6 +30,7 @@ export default function App() {
           <Switch>
             <Route exact path="/" component={SignIn} />
             <Route path="/signup" component={SignUp} />
+            <Route path="/passwordReset" component={PasswordReset} />
             <Route path="/about" component={About} />
             <Route path="/articles" component={Articles} />
             <Route path="/help" component={Help} />
