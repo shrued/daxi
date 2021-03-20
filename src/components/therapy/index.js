@@ -1,5 +1,20 @@
 import React from "react";
-import { Container, SubContent, SubHeading, SubTitle, Title } from "./therapy";
+import { RightOutlined } from "@ant-design/icons";
+import {
+  Container,
+  Counselling,
+  CounsellingCard,
+  SideCard,
+  SideImage,
+  SideName,
+  SideText,
+  SubContent,
+  SubHeading,
+  SubTitle,
+  Title,
+} from "./therapy";
+
+import talkspace from "../../images/talkspace.png";
 
 export default function Therapy() {
   return (
@@ -27,6 +42,31 @@ export default function Therapy() {
         help, these tips can be part of your treatment plan, speeding your
         recovery and preventing depression from returning.
       </SubContent>
+      <Counselling>
+        <CounsellingCard>
+          <SideName>
+            Talkspace
+            <RightOutlined
+              style={{
+                fontSize: "15px",
+                display: "inline-block",
+                verticalAlign: "middle",
+              }}
+            />
+          </SideName>
+          <SideCard>
+            <SideImage src={talkspace} />
+            <SideText>
+              With over 3,000 licensed therapists and multiple subscription
+              plans, Talkspace takes the spot for best overall online therapy.
+              After signing up, you’ll complete an assessment and choose your
+              payment plan. Then a consultation therapist will match you with
+              several therapists and you’ll choose the one that fits your needs.
+              You’ll begin working with them within a few days.
+            </SideText>
+          </SideCard>
+        </CounsellingCard>
+      </Counselling>
     </Container>
   );
 }

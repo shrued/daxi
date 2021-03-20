@@ -50,3 +50,48 @@ export const SubContent = styled.p`
   letter-spacing: 0.02rem;
   color: #404353;
 `;
+
+export const Counselling = styled.div``;
+
+export const CounsellingCard = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: white;
+  height: 100%;
+  width: 80%;
+  padding: 30px;
+  margin: 40px;
+
+  @media (max-width: 900px) {
+    width: auto;
+  }
+`;
+
+export const SideName = styled.a`
+  font-size: 24px;
+  text-decoration: none !important;
+  color: #181818;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: none !important;
+    color: #181818;
+  }
+`;
+
+export const SideCard = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const SideImage = styled.img`
+  width: 200px;
+`;
+
+export const SideText = styled.div`
+  padding: 20px;
+`;
