@@ -16,6 +16,26 @@ export const Container = styled.div`
   padding: 40px;
 `;
 
+export const Title = styled.p`
+  font-weight: 200;
+  text-align: center;
+  font-size: 40px;
+  font-size: 2.5rem;
+  letter-spacing: 0px;
+  letter-spacing: 0.05rem;
+  color: #404353;
+`;
+
+export const SubTitle = styled.p`
+  text-align: center;
+  line-height: 1em;
+  font-size: 19px;
+  font-weight: 100;
+  letter-spacing: 0px;
+  letter-spacing: 0.02rem;
+  color: #404353;
+`;
+
 export const SubContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -37,4 +57,18 @@ export const ArticleCards = styled.div`
   flex-wrap: wrap;
   flex-basis: 50%;
   justify-content: center;
+`;
+export const Article = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const ArticleTitle = styled.h5`
+  text-align: center;
+`;
+
+export const ArticleAuthor = styled.p`
+  font-style: italic;
 `;
