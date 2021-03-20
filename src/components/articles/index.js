@@ -1,11 +1,18 @@
 import React from "react";
-import { Container, TextContainer } from "./articles";
+import { Typography, Switch } from "antd";
+import {
+  ArticleCards,
+  Container,
+  SubContainer,
+  TextContainer,
+} from "./articles";
 
 class Articles extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       articles: [],
+      ellipsis: true,
     };
   }
 
@@ -21,19 +28,36 @@ class Articles extends React.Component {
 
   render() {
     var { articles } = this.state;
+    const { Paragraph } = Typography;
 
     return (
-      <div>
+      <Container>
         <p>Articles</p>
         <ul>
-          {articles.map((article) => (
-            <li key={article.id}>
-              Title: {article.title} | Author: {article.author} <br />
-              {article.article}
-            </li>
-          ))}
+          <ArticleCards>
+            {articles.map((article) => (
+              <SubContainer>
+                <li key={article.id}>
+                  Title: {article.title} | Author: {article.author} <br />
+                  <Paragraph
+                    ellipsis={
+                      this.state.ellipsis
+                        ? {
+                            rows: 2,
+                            expandable: true,
+                            symbol: "more",
+                          }
+                        : false
+                    }
+                  >
+                    {article.article}
+                  </Paragraph>
+                </li>
+              </SubContainer>
+            ))}
+          </ArticleCards>
         </ul>
-      </div>
+      </Container>
     );
   }
 }
