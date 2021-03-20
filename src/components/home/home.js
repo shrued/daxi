@@ -16,6 +16,15 @@ export const WaveContent = styled.div`
   font-size: 3.76rem;
 `;
 
+export const Hello = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  padding: 40px;
+  font-style: italic;
+`;
+
 export const Placard = styled.div`
   display: flex;
   justify-content: center;
@@ -31,4 +40,47 @@ export const Tenets = styled.div`
   align-items: center;
   justify-content: center;
   padding-bottom: 40px;
+`;
+
+export const SignOutContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px;
+`;
+
+export const MediumText = styled.p`
+  font-size: 20px;
+  color: #181818;
+  text-align: center;
+  padding-top: 20px;
+`;
+
+export const SignOutButton = styled.button`
+  cursor: pointer;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.75);
+  align-self: center;
+  font-size: 16px;
+  line-height: 1.7em;
+  margin-top: auto;
+  padding: 5px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  width: 120px;
+  text-decoration: none;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: black;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+  }
 `;

@@ -1,7 +1,21 @@
-import React from "react";
-import { CloudWave, Placard, Tenets, WaveContent } from "./home";
+import React, { useContext } from "react";
+import { UserContext } from "../../providers/userProvider";
+import { auth } from "../../firebase/firebase";
+import {
+  CloudWave,
+  Placard,
+  Tenets,
+  WaveContent,
+  Hello,
+  SignOutContainer,
+  MediumText,
+  SignOutButton,
+} from "./home";
 
 export default function Home() {
+  const user = useContext(UserContext);
+  const { displayName } = user;
+
   return (
     <>
       <CloudWave>
@@ -26,6 +40,10 @@ export default function Home() {
           </div>
         </div>
       </CloudWave>
+      <Hello>
+        Hi {displayName}! If you're here, you already took the first step at
+        getting better.
+      </Hello>
       <Placard>Get and stay motivated using Daxi.</Placard>
       <Tenets>
         <div class="cards">
@@ -79,6 +97,18 @@ export default function Home() {
           </div>
         </div>
       </Tenets>
+      <SignOutContainer>
+        <MediumText>
+          You are signed in as {displayName}. To sign out, click here:
+        </MediumText>
+        <SignOutButton
+          onClick={() => {
+            auth.signOut();
+          }}
+        >
+          Sign out
+        </SignOutButton>
+      </SignOutContainer>
     </>
   );
 }
