@@ -1,7 +1,16 @@
 import React, { useContext } from "react";
 import { UserContext } from "../../providers/userProvider";
 import { auth } from "../../firebase/firebase";
-import { CloudWave, Placard, Tenets, WaveContent, Hello } from "./home";
+import {
+  CloudWave,
+  Placard,
+  Tenets,
+  WaveContent,
+  Hello,
+  SignOutContainer,
+  MediumText,
+  SignOutButton,
+} from "./home";
 
 export default function Home() {
   const user = useContext(UserContext);
@@ -36,13 +45,6 @@ export default function Home() {
         getting better.
       </Hello>
       <Placard>Get and stay motivated using Daxi.</Placard>
-      <button
-        onClick={() => {
-          auth.signOut();
-        }}
-      >
-        Sign out
-      </button>
       <Tenets>
         <div class="cards">
           <div class="card content">
@@ -95,6 +97,18 @@ export default function Home() {
           </div>
         </div>
       </Tenets>
+      <SignOutContainer>
+        <MediumText>
+          You are signed in as {displayName}. To sign out, click here:
+        </MediumText>
+        <SignOutButton
+          onClick={() => {
+            auth.signOut();
+          }}
+        >
+          Sign out
+        </SignOutButton>
+      </SignOutContainer>
     </>
   );
 }
