@@ -4,24 +4,24 @@ Sleep and mental health are closely connected. Those with mental health problems
 A significant percent of the world's population is struggling with mental and sleep issues every day. The web application that we propose will be an all-encompassing platform where people seeking help can find guidance, advice, and answers. We plan to provide a plethora of personalized content to help people get better in any way possible.
 
 ## Tech Stack
-- React <br>
+- React
 - Firebase
 
 ## Other tech used
-- Bootstrap <br>
-- React Bootstrap <br>
-- Ant Design <br>
-- Styled Components <br>
-- React Router Dom <br>
+- Bootstrap
+- React Bootstrap 
+- Ant Design 
+- Styled Components
+- React Router Dom 
 - React Simple Chatbot
 - React Calendar
 
 ## Features
-- Sign in/Sign up with email/password sign-in as well as Google pop-up sign-in including a forgot password option <br>
-- Chatbot with speech recognition <br>
-- Mood Tracking Board to record the user's mood everyday represented by 5 colors on a calendar using their input <br>
-- Reflection to allow the user to enter a question today and be asked the same question in exactly one year <br>
-- Mood Path to ask the user to answer the set of same questions everyday in order to draw up a pattern <br>
+- Sign in/Sign up with email/password sign-in as well as Google pop-up sign-in including a forgot password option 
+- Chatbot with speech recognition 
+- Mood Tracking Board to record the user's mood everyday represented by 5 colors on a calendar using their input 
+- Reflection to allow the user to enter a question today and be asked the same question in exactly one year
+- Mood Path to ask the user to answer the set of same questions everyday in order to draw up a pattern 
 - Articles to help the user cope with mental health issues
 - Therapy section to provide the user with professional online help
 
