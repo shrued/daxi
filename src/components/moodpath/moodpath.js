@@ -48,7 +48,6 @@ export const Title = styled.p`
   text-align: center;
   font-size: 40px;
   font-size: 2.5rem;
-  letter-spacing: 0px;
   letter-spacing: 0.05rem;
   color: #404353;
 `;
@@ -56,15 +55,27 @@ export const Title = styled.p`
 export const SubTitle = styled.p`
   text-align: center;
   line-height: 1em;
+  font-size: 19px;
   font-weight: 100;
-  letter-spacing: 0px;
   letter-spacing: 0.02rem;
   color: #404353;
+`;
 
-  a {
-    text-decoration: none !important;
-    color: #181818;
-  }
+export const SubHeading = styled.p`
+  text-align: center;
+  font-style: italic;
+  line-height: 1em;
+  font-size: 26px;
+  letter-spacing: 0.02rem;
+  color: #404353;
+`;
+
+export const SubContent = styled.p`
+  text-align: center;
+  line-height: 1em;
+  font-size: 19px;
+  letter-spacing: 0.02rem;
+  color: #404353;
 `;
 
 export const BigText = styled.p`
