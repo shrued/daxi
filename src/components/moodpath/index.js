@@ -5,7 +5,7 @@ import { Container, SubTitle, Title } from "./moodpath";
 export default function MoodPath() {
   return (
     <Container>
-      <Title>MoodPath page</Title>
+      <Title>Mood Path</Title>
       <SubTitle>
         You will be asked to answer a bunch of questions about your emotional
         and physical well-being. These questions will help you reflect on your
@@ -14,6 +14,7 @@ export default function MoodPath() {
       <Form>
         <Form.Item
           name="radio-button"
+          tooltip="Why am I being asked this? Your answer might be relevant in the process of helping. You may skip a question if you feel like it."
           label="Do you often experience extreme inner turmoil that has no obvious cause?"
         >
           <Radio.Group>
@@ -21,13 +22,11 @@ export default function MoodPath() {
             <Radio.Button value="b">No</Radio.Button>
           </Radio.Group>
         </Form.Item>
-        <Form.Item name="radio-button" label="Did you sleep poorly last night?">
-          <Radio.Group>
-            <Radio.Button value="a">Yes</Radio.Button>
-            <Radio.Button value="b">No</Radio.Button>
-          </Radio.Group>
-        </Form.Item>
-        <Form.Item name="radio-button" label="Are you feeling down or sad?">
+        <Form.Item
+          name="radio-button"
+          tooltip="Why am I being asked this? Your answer might be relevant in the process of helping. You may skip a question if you feel like it."
+          label="Did you sleep poorly last night?"
+        >
           <Radio.Group>
             <Radio.Button value="a">Yes</Radio.Button>
             <Radio.Button value="b">No</Radio.Button>
@@ -35,6 +34,17 @@ export default function MoodPath() {
         </Form.Item>
         <Form.Item
           name="radio-button"
+          tooltip="Why am I being asked this? Your answer might be relevant in the process of helping. You may skip a question if you feel like it."
+          label="Are you feeling down or sad?"
+        >
+          <Radio.Group>
+            <Radio.Button value="a">Yes</Radio.Button>
+            <Radio.Button value="b">No</Radio.Button>
+          </Radio.Group>
+        </Form.Item>
+        <Form.Item
+          name="radio-button"
+          tooltip="Why am I being asked this? Your answer might be relevant in the process of helping. You may skip a question if you feel like it."
           label="Have you recently talked openly about your feelings?"
         >
           <Radio.Group>
@@ -44,6 +54,7 @@ export default function MoodPath() {
         </Form.Item>
         <Form.Item
           name="radio-button"
+          tooltip="Why am I being asked this? Your answer might be relevant in the process of helping. You may skip a question if you feel like it."
           label="Do you often spend a lot of time trying to perfect things that you have already done well?"
         >
           <Radio.Group>
@@ -53,6 +64,7 @@ export default function MoodPath() {
         </Form.Item>
         <Form.Item
           name="radio-button"
+          tooltip="Why am I being asked this? Your answer might be relevant in the process of helping. You may skip a question if you feel like it."
           label="Do you use your smartphone to escape from negative feelings?"
         >
           <Radio.Group>
@@ -62,6 +74,7 @@ export default function MoodPath() {
         </Form.Item>
         <Form.Item
           name="radio-button"
+          tooltip="Why am I being asked this? Your answer might be relevant in the process of helping. You may skip a question if you feel like it."
           label="Do you have persistent or recurring pain?"
         >
           <Radio.Group>
