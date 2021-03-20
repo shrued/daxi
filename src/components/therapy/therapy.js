@@ -51,9 +51,14 @@ export const SubContent = styled.p`
   color: #404353;
 `;
 
-export const Counselling = styled.div``;
+export const Counseling = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
 
-export const CounsellingCard = styled.div`
+export const CounselingCard = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
