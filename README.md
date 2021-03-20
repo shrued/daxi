@@ -15,6 +15,7 @@ A significant percent of the world's population is struggling with mental and sl
 - React Router Dom 
 - React Simple Chatbot
 - React Calendar
+- Mock API
 
 ## Features
 - Sign in/Sign up with email/password sign-in as well as Google pop-up sign-in including a forgot password option 
@@ -22,7 +23,7 @@ A significant percent of the world's population is struggling with mental and sl
 - Mood Tracking Board to record the user's mood everyday represented by 5 colors on a calendar using their input 
 - Reflection to allow the user to enter a question today and be asked the same question in exactly one year
 - Mood Path to ask the user to answer the set of same questions everyday in order to draw up a pattern 
-- Articles to help the user cope with mental health issues
+- Articles to help the user cope with mental health issues (we made our own API for this feature)
 - Therapy section to provide the user with professional online help
 
 ## Future applications
