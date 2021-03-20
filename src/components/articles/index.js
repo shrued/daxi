@@ -22,7 +22,7 @@ class Articles extends React.Component {
   }
 
   componentDidMount() {
-    fetch("https://api.mocki.io/v1/10c23814")
+    fetch("https://api.mocki.io/v1/284baf14")
       .then((res) => res.json())
       .then((json) => {
         this.setState({
