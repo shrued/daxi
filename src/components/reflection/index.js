@@ -1,5 +1,18 @@
 import React from "react";
 import { firestore } from "../../firebase/firebase";
+import {
+  Container,
+  FormButton,
+  FormContainer,
+  FormInput,
+  LastYear,
+  Text,
+  GetButton,
+  SubContainer,
+  Quote,
+  BigText,
+  MediumText,
+} from "./reflection";
 class User extends React.Component {
   constructor() {
     super();
@@ -65,9 +78,37 @@ class User extends React.Component {
 
   render() {
     return (
-      <>
-        <form onSubmit={this.addQuestion}>
-          <input
+      <Container>
+        <SubContainer>
+          <BigText>What is the Reflection feature?</BigText>
+          <Text>
+            Getting caught up in the busyness of daily life can make it
+            challenging to turn inward and reflect on our thoughts and feelings.
+            But introspection — or self-reflection — can spark insight, which
+            can alter the way we see ourselves and those around us. <br />
+            This feature will help you with exactly that. <br />
+            You get to type a question everyday. Then, one year late, you wil be
+            asked the same question. <br />
+            If you were shown your question from a year ago, what would your
+            answer be now? Thought provoking isn't it?
+          </Text>
+          <Quote>
+            Studies show “turning inward” can strengthen our emotional
+            intelligence, which can make it easier for us to cope with life’s
+            challenges.
+          </Quote>
+        </SubContainer>
+        <SubContainer>
+          <MediumText>So let's type out today's question!</MediumText>
+          <Text>
+            Make a question out of something that you thought a lot about today.
+            <br />
+            You will be asked the same question in exactly one year so you can
+            sit back and reflect.
+          </Text>
+        </SubContainer>
+        <FormContainer onSubmit={this.addQuestion} autoComplete="off">
+          <FormInput
             type="text"
             name="question"
             placeholder=""
@@ -75,13 +116,17 @@ class User extends React.Component {
             onChange={this.updateQuestion}
           />
 
-          <button type="submit">Submit</button>
-        </form>
-        <div>
-          <button onClick={this.getQuestion}>Last year's question</button>
+          <FormButton type="submit">Submit</FormButton>
+        </FormContainer>
+        <LastYear>
+          <Text>
+            If you entered a question on this day, last year, go ahead and click
+            the button to see your question and start reflecting.
+          </Text>
+          <GetButton onClick={this.getQuestion}>Get question</GetButton>
           {this.state.theQuestion}
-        </div>
-      </>
+        </LastYear>
+      </Container>
     );
   }
 }
