@@ -41,6 +41,9 @@ A significant percent of the world's population is struggling with mental and sl
 
 ![Screenshot from 2021-03-20 15-53-48](https://user-images.githubusercontent.com/52789421/111866577-7cfc3280-8994-11eb-8a6a-df78ba1255bc.png)
 
+## Mood Path page
+![Screenshot from 2021-03-20 20-57-36](https://user-images.githubusercontent.com/52789421/111875290-00cb1480-89bf-11eb-90d1-def57efc0ed3.png)
+
 ## Mood Tracking Board page
 ![Screenshot from 2021-03-20 15-46-10](https://user-images.githubusercontent.com/52789421/111866599-9e5d1e80-8994-11eb-834a-6ff2bcbc8531.png)
 
