@@ -36,13 +36,21 @@ A significant percent of the world's population is struggling with mental and sl
 ## Chatbot
 ![Screenshot from 2021-03-20 16-00-32](https://user-images.githubusercontent.com/52789421/111866726-83d77500-8995-11eb-9c10-2df3e28a5edc.png)
 
-## Reflection
+## Reflection page
 ![Screenshot from 2021-03-20 15-46-15](https://user-images.githubusercontent.com/52789421/111866553-54743880-8994-11eb-999f-b1d4038ba2e6.png)
 
 ![Screenshot from 2021-03-20 15-53-48](https://user-images.githubusercontent.com/52789421/111866577-7cfc3280-8994-11eb-8a6a-df78ba1255bc.png)
 
-## Mood Tracking Board
+## Mood Tracking Board page
 ![Screenshot from 2021-03-20 15-46-10](https://user-images.githubusercontent.com/52789421/111866599-9e5d1e80-8994-11eb-834a-6ff2bcbc8531.png)
 
-## Articles
+## Articles page
 ![Screenshot from 2021-03-20 18-09-37](https://user-images.githubusercontent.com/52789421/111870073-842d3b80-89a8-11eb-8284-0de32df290c6.png)
+
+## Therapy page
+![Screenshot from 2021-03-20 19-15-02](https://user-images.githubusercontent.com/52789421/111871540-b6429b80-89b0-11eb-9448-8d9da355b526.png)
+
+![Screenshot from 2021-03-20 19-15-14](https://user-images.githubusercontent.com/52789421/111871561-d8d4b480-89b0-11eb-94a7-0dedb7dea01b.png)
+
+![Screenshot from 2021-03-20 19-15-19](https://user-images.githubusercontent.com/52789421/111871562-da9e7800-89b0-11eb-9240-a9c3e1a807df.png)
+
