@@ -19,10 +19,11 @@ A significant percent of the world's population is struggling with mental and sl
 ## Features
 - Sign in/Sign up with email/password sign-in as well as Google pop-up sign-in including a forgot password option <br>
 - Chatbot with speech recognition <br>
-- Mood Tracking Board <br>
-- Reflection <br>
-- Mood Path <br>
-- Articles 
+- Mood Tracking Board to record the user's mood everyday represented by 5 colors on a calendar using their input <br>
+- Reflection to allow the user to enter a question today and be asked the same question in exactly one year <br>
+- Mood Path to ask the user to answer the set of same questions everyday in order to draw up a pattern <br>
+- Articles to help the user cope with mental health issues
+- Therapy section to provide the user with professional online help
 
 ## Sign in page
 ![Screenshot from 2021-03-20 15-46-31](https://user-images.githubusercontent.com/52789421/111866546-3c9cb480-8994-11eb-8314-d48733fefa2e.png)
