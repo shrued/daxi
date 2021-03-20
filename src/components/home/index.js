@@ -15,6 +15,7 @@ import {
 import moodpath from "../../images/home/moodpath.png";
 import moodboard from "../../images/home/moodboard.png";
 import reflection from "../../images/home/reflection.png";
+import articles_chatbot from "../../images/home/articles_chatbot.png";
 
 export default function Home() {
   const user = useContext(UserContext);
@@ -87,8 +88,17 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div class="card form">
-            <div class="form-title">Sign Up</div>
+          <div class="card content">
+            <div class="card-content">
+              <div class="card-img">
+                <img src={articles_chatbot} alt="Articles and Chatbot" />
+              </div>
+              <div class="card-label">Articles and Chatbot</div>
+              <div class="card-title">
+                Read articles to boost your emotions and chat with Daxi to find
+                help.
+              </div>
+            </div>
           </div>
         </div>
       </Tenets>
