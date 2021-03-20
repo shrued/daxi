@@ -1,0 +1,12 @@
+export const HOME = "/";
+export const BROWSE = "/browse";
+export const SIGN_UP = "/signup";
+export const SIGN_IN = "/signin";
+export const PASSWORD_RESET = "/passwordReset";
+export const ABOUT = "/about";
+export const ARTICLES = "/articles";
+export const HELP = "/help";
+export const MOODBOARD = "/moodboard";
+export const MOODPATH = "/moodpath";
+export const REFLECTION = "/reflection";
+export const THERAPY = "/therapy";

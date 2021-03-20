@@ -4,7 +4,6 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   background-image: linear-gradient(
     to right bottom,
     #d2e0dd,
@@ -13,7 +12,6 @@ export const Container = styled.div`
     #98d0d6,
     #83cad8
   );
-  padding: 40px;
 `;
 
 export const SubContainer = styled.div`
@@ -21,20 +19,10 @@ export const SubContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 80%;
-
-  @media (max-width: 900px) {
-    width: auto;
-  }
-`;
-
-export const Quote = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-left: 2px solid #181818;
+  border-radius: 5px;
+  background: white;
   height: 100%;
+  width: 30%;
   padding: 30px;
   margin: 40px;
 
@@ -67,27 +55,35 @@ export const SubTitle = styled.p`
   }
 `;
 
-export const BigText = styled.p`
-  font-size: 34px;
-  color: #181818;
-  text-align: center;
-`;
-
-export const MediumText = styled.p`
-  font-size: 26px;
-  color: #181818;
-  text-align: center;
-  padding-top: 20px;
-`;
-
 export const Text = styled.p`
-  color: #181818;
+  a {
+    text-decoration: none !important;
+    color: #181818;
+  }
+`;
+
+export const Error = styled.p`
   text-align: center;
+  line-height: 1em;
+  font-weight: 100;
+  letter-spacing: 0px;
+  letter-spacing: 0.02rem;
+  color: #e45151;
+`;
+
+export const Success = styled.p`
+  text-align: center;
+  line-height: 1em;
+  font-weight: 100;
+  letter-spacing: 0px;
+  letter-spacing: 0.02rem;
+  color: #5dbe5d;
 `;
 
 export const FormContainer = styled.form`
   display: flex;
-  margin: 25px;
+  flex-direction: column;
+  margin-top: 25px;
 `;
 
 export const FormLabel = styled.label`
@@ -112,50 +108,19 @@ export const FormInput = styled.input`
 
 export const FormButton = styled.button`
   cursor: pointer;
-  border: none;
-  border-radius: 15px;
+  border: 1px solid #404353;
+  border-radius: 25px;
   color: #404353;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
-  font-size: 16px;
-  line-height: 1.7em;
+  font-size: 19px;
+  line-height: 2em;
   margin-top: auto;
   margin-bottom: 15px;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   width: 100%;
-  text-decoration: none;
-  &:hover {
-    background: rgba(0, 0, 0, 0.75);
-    color: white;
-  }
-  &:hover,
-  &:focus,
-  &:active {
-    text-decoration: none;
-  }
-`;
-
-export const LastYear = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: auto;
-`;
-
-export const GetButton = styled.button`
-  cursor: pointer;
-  border: none;
-  border-radius: 15px;
-  color: #404353;
-  align-self: center;
-  font-size: 16px;
-  line-height: 1.7em;
-  margin-top: auto;
-  padding: 5px;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-  width: auto;
   text-decoration: none;
   &:hover {
     background: rgba(0, 0, 0, 0.75);
