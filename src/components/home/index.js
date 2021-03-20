@@ -12,6 +12,10 @@ import {
   SignOutButton,
 } from "./home";
 
+import moodpath from "../../images/home/moodpath.png";
+import moodboard from "../../images/home/moodboard.png";
+import reflection from "../../images/home/reflection.png";
+
 export default function Home() {
   const user = useContext(UserContext);
   const { displayName } = user;
@@ -50,10 +54,7 @@ export default function Home() {
           <div class="card content">
             <div class="card-content">
               <div class="card-img">
-                <img
-                  src="https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"
-                  alt="Mood Tracking Board"
-                />
+                <img src={moodboard} alt="Mood Tracking Board" />
               </div>
               <div class="card-label">Mood Tracking Board</div>
               <div class="card-title">
@@ -65,10 +66,7 @@ export default function Home() {
           <div class="card content">
             <div class="card-content">
               <div class="card-img">
-                <img
-                  src="https://images.unsplash.com/photo-1547394765-185e1e68f34e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
-                  alt="Reflection"
-                />
+                <img src={reflection} alt="Reflection" />
               </div>
               <div class="card-label">Reflection</div>
               <div class="card-title">
@@ -80,10 +78,7 @@ export default function Home() {
           <div class="card content">
             <div class="card-content">
               <div class="card-img">
-                <img
-                  src="https://images.unsplash.com/photo-1519326844852-704caea5679e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2034&q=80"
-                  alt="Mood Path"
-                />
+                <img src={moodpath} alt="Mood Path" />
               </div>
               <div class="card-label">Mood Path</div>
               <div class="card-title">
