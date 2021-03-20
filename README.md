@@ -43,3 +43,6 @@ A significant percent of the world's population is struggling with mental and sl
 
 ## Mood Tracking Board
 ![Screenshot from 2021-03-20 15-46-10](https://user-images.githubusercontent.com/52789421/111866599-9e5d1e80-8994-11eb-834a-6ff2bcbc8531.png)
+
+## Articles
+![Screenshot from 2021-03-20 18-09-37](https://user-images.githubusercontent.com/52789421/111870073-842d3b80-89a8-11eb-8284-0de32df290c6.png)
