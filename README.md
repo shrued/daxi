@@ -36,7 +36,7 @@ A significant percent of the world's population is struggling with mental and sl
 ![Screenshot from 2021-03-20 21-16-51](https://user-images.githubusercontent.com/52789421/111875793-9cf61b00-89c1-11eb-93a9-5bba1455ccdf.png)
 
 ## Chatbot
-![Screenshot from 2021-03-20 16-00-32](https://user-images.githubusercontent.com/52789421/111866726-83d77500-8995-11eb-9c10-2df3e28a5edc.png)
+![Screenshot from 2021-03-20 21-18-47](https://user-images.githubusercontent.com/52789421/111875850-e181b680-89c1-11eb-9d25-a852b3d887b1.png)
 
 ## Reflection page
 ![Screenshot from 2021-03-20 15-46-15](https://user-images.githubusercontent.com/52789421/111866553-54743880-8994-11eb-999f-b1d4038ba2e6.png)
