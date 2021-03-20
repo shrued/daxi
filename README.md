@@ -13,3 +13,33 @@ A significant percent of the world's population is struggling with mental and sl
 - Ant Design <br>
 - Styled Components <br>
 - React Router Dom <br>
+- React Simple Chatbot
+- React Calendar
+
+## Features
+- Sign in/Sign up with email/password sign-in as well as Google pop-up sign-in including a forgot password option <br>
+- Chatbot with speech recognition <br>
+- Mood Tracking Board <br>
+- Reflection <br>
+- Mood Path <br>
+- Articles 
+
+## Sign in page
+![Screenshot from 2021-03-20 15-46-31](https://user-images.githubusercontent.com/52789421/111866546-3c9cb480-8994-11eb-8314-d48733fefa2e.png)
+
+## Sign up page
+![Screenshot from 2021-03-20 15-46-35](https://user-images.githubusercontent.com/52789421/111866520-12e38d80-8994-11eb-8a63-18724eed2fb8.png)
+
+## Home page
+![Screenshot from 2021-03-20 16-00-15](https://user-images.githubusercontent.com/52789421/111866714-70c4a500-8995-11eb-8edc-cb6e4d56a6eb.png)
+
+## Chatbot
+![Screenshot from 2021-03-20 16-00-32](https://user-images.githubusercontent.com/52789421/111866726-83d77500-8995-11eb-9c10-2df3e28a5edc.png)
+
+## Reflection
+![Screenshot from 2021-03-20 15-46-15](https://user-images.githubusercontent.com/52789421/111866553-54743880-8994-11eb-999f-b1d4038ba2e6.png)
+
+![Screenshot from 2021-03-20 15-53-48](https://user-images.githubusercontent.com/52789421/111866577-7cfc3280-8994-11eb-8a6a-df78ba1255bc.png)
+
+## Mood Tracking Board
+![Screenshot from 2021-03-20 15-46-10](https://user-images.githubusercontent.com/52789421/111866599-9e5d1e80-8994-11eb-834a-6ff2bcbc8531.png)
