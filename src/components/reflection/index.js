@@ -6,6 +6,7 @@ class User extends React.Component {
     this.state = {
       question: "",
       timestamp: Date.now(),
+      theQuestion: "",
     };
   }
 
@@ -37,19 +38,50 @@ class User extends React.Component {
     alert("Your question has been submitted.");
   };
 
+  getQuestion = (e) => {
+    e.preventDefault();
+
+    let date = this.formatTime(this.state.timestamp);
+
+    var d = new Date();
+    var pastYear = d.getFullYear() - 1;
+    d.setFullYear(pastYear);
+    d = this.formatTime(d).substr(0, date.indexOf(" "));
+
+    const db = firestore;
+
+    db.collection("questions")
+      .get()
+      .then((snapshot) => {
+        snapshot.docs.forEach((doc) => {
+          let items = doc.data();
+          Object.keys(items).map((item, index) => {
+            if (items[item].substr(0, date.indexOf(" ")) === d)
+              this.setState({ theQuestion: items["question"] });
+          });
+        });
+      });
+  };
+
   render() {
     return (
-      <form onSubmit={this.addQuestion}>
-        <input
-          type="text"
-          name="question"
-          placeholder=""
-          value={this.state.question}
-          onChange={this.updateQuestion}
-        />
+      <>
+        <form onSubmit={this.addQuestion}>
+          <input
+            type="text"
+            name="question"
+            placeholder=""
+            value={this.state.question}
+            onChange={this.updateQuestion}
+          />
 
-        <button type="submit">Submit</button>
-      </form>
+          <button type="submit">Submit</button>
+        </form>
+        <div>
+          <button onClick={this.getQuestion}>Last year's question</button>
+          {this.state.theQuestion}
+        </div>
+      </>
     );
   }
 }
