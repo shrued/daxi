@@ -5,41 +5,36 @@ class Articles extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      items: [],
-      isLoaded: false,
+      articles: [],
     };
   }
 
   componentDidMount() {
-    fetch("https://api.mocki.io/v1/3f47888a")
+    fetch("https://api.mocki.io/v1/10c23814")
       .then((res) => res.json())
       .then((json) => {
         this.setState({
-          isLoaded: true,
-          items: json,
+          articles: json,
         });
       });
   }
 
   render() {
-    var { isLoaded, items } = this.state;
-    if (!isLoaded) {
-      return <div>Loading...</div>;
-    } else {
-      return (
-        <div>
-          <p>Articles</p>
-          <ul>
-            {items.map((item) => (
-              <li key={item.id}>
-                Title: {item.title} | Author: {item.author} <br />
-                {item.article}
-              </li>
-            ))}
-          </ul>
-        </div>
-      );
-    }
+    var { articles } = this.state;
+
+    return (
+      <div>
+        <p>Articles</p>
+        <ul>
+          {articles.map((article) => (
+            <li key={article.id}>
+              Title: {article.title} | Author: {article.author} <br />
+              {article.article}
+            </li>
+          ))}
+        </ul>
+      </div>
+    );
   }
 }
 
