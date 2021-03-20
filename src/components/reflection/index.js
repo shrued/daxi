@@ -41,14 +41,20 @@ class User extends React.Component {
     e.preventDefault();
     const db = firestore;
 
-    const userRef = db.collection("questions").add({
-      question: this.state.question,
-      timestamp: this.formatTime(this.state.timestamp),
-    });
-    this.setState({
-      question: "",
-    });
-    alert("Your question has been submitted.");
+    if (this.state.question) {
+      const userRef = db.collection("questions").add({
+        question: this.state.question,
+        timestamp: this.formatTime(this.state.timestamp),
+      });
+      this.setState({
+        question: "",
+      });
+      alert("Your question has been submitted.");
+    } else {
+      alert(
+        "Cannot submit an empty field. Please type something before submitting."
+      );
+    }
   };
 
   getQuestion = (e) => {
@@ -124,7 +130,7 @@ class User extends React.Component {
             the button to see your question and start reflecting.
           </Text>
           <GetButton onClick={this.getQuestion}>Get question</GetButton>
-          {this.state.theQuestion}
+          <MediumText>{this.state.theQuestion}</MediumText>
         </LastYear>
       </Container>
     );

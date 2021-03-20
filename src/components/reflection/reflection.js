@@ -77,6 +77,7 @@ export const MediumText = styled.p`
   font-size: 26px;
   color: #181818;
   text-align: center;
+  padding-top: 20px;
 `;
 
 export const Text = styled.p`
