@@ -4,25 +4,32 @@ Sleep and mental health are closely connected. Those with mental health problems
 A significant percent of the world's population is struggling with mental and sleep issues every day. The web application that we propose will be an all-encompassing platform where people seeking help can find guidance, advice, and answers. We plan to provide a plethora of personalized content to help people get better in any way possible.
 
 ## Tech Stack
-- React <br>
+- React
 - Firebase
 
 ## Other tech used
-- Bootstrap <br>
-- React Bootstrap <br>
-- Ant Design <br>
-- Styled Components <br>
-- React Router Dom <br>
+- Bootstrap
+- React Bootstrap 
+- Ant Design 
+- Styled Components
+- React Router Dom 
 - React Simple Chatbot
 - React Calendar
+- Mock API
+- iTyped
 
 ## Features
-- Sign in/Sign up with email/password sign-in as well as Google pop-up sign-in including a forgot password option <br>
-- Chatbot with speech recognition <br>
-- Mood Tracking Board <br>
-- Reflection <br>
-- Mood Path <br>
-- Articles 
+- Sign in/Sign up with email/password sign-in as well as Google pop-up sign-in including a forgot password option 
+- Chatbot with speech recognition 
+- Mood Tracking Board to record the user's mood everyday represented by 5 colors on a calendar using their input 
+- Reflection to allow the user to enter a question today and be asked the same question in exactly one year
+- Mood Path to ask the user to answer the set of same questions everyday in order to draw up a pattern 
+- Articles to help the user cope with mental health issues (we made our own API for this feature)
+- Therapy section to provide the user with professional online help
+- The Help and About pages are placeholders and can be filled with anything a typical Help and About page might have
+
+## Future applications
+The data collected using the aforementioned features can be used to provide a plethora of personalized content. Based on the user's responses, the app should be able to provide regular insights and weekly assessments. The mood tracking board can be used to draw up a personal monthly report that can be given to the user's psychologist (if they have one). Of course, these reports can't replace a diagnosis from an actual doctor or psychotherapist, but they can help a patient discuss the situation with a therapist or a doctor. The app can also be equipped to send personalized reminders on top of subscriptions to an everday feed. An entirely new feature that can be implemented with more time is the Community feature which will bring together people from all over the world in a group chatting forum. In simple words, this app will be helpful to those curious about their feelings or those seeking help to understand and control their feelings.
 
 ## Sign in page
 ![Screenshot from 2021-03-20 15-46-31](https://user-images.githubusercontent.com/52789421/111866546-3c9cb480-8994-11eb-8314-d48733fefa2e.png)
@@ -31,12 +38,12 @@ A significant percent of the world's population is struggling with mental and sl
 ![Screenshot from 2021-03-20 15-46-35](https://user-images.githubusercontent.com/52789421/111866520-12e38d80-8994-11eb-8a63-18724eed2fb8.png)
 
 ## Home page
-![Screenshot from 2021-03-20 16-00-15](https://user-images.githubusercontent.com/52789421/111866714-70c4a500-8995-11eb-8edc-cb6e4d56a6eb.png)
+![Screenshot from 2021-03-21 10-35-10](https://user-images.githubusercontent.com/52789421/111894513-298bf200-8a31-11eb-8f15-5274581fd10a.png)
 
 ![Screenshot from 2021-03-20 21-16-51](https://user-images.githubusercontent.com/52789421/111875793-9cf61b00-89c1-11eb-93a9-5bba1455ccdf.png)
 
 ## Chatbot
-![Screenshot from 2021-03-20 16-00-32](https://user-images.githubusercontent.com/52789421/111866726-83d77500-8995-11eb-9c10-2df3e28a5edc.png)
+![Screenshot from 2021-03-21 10-36-33](https://user-images.githubusercontent.com/52789421/111894536-54764600-8a31-11eb-81b3-3a1e1c489774.png)
 
 ## Reflection page
 ![Screenshot from 2021-03-20 15-46-15](https://user-images.githubusercontent.com/52789421/111866553-54743880-8994-11eb-999f-b1d4038ba2e6.png)
