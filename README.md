@@ -32,7 +32,7 @@ A significant percent of the world's population is struggling with mental and sl
 The data collected using the aforementioned features can be used to provide a plethora of personalized content. Based on the user's responses, the app should be able to provide regular insights and weekly assessments. The mood tracking board can be used to draw up a personal monthly report that can be given to the user's psychologist (if they have one). Of course, these reports can't replace a diagnosis from an actual doctor or psychotherapist, but they can help a patient discuss the situation with a therapist or a doctor. The app can also be equipped to send personalized reminders on top of subscriptions to an everday feed. An entirely new feature that can be implemented with more time is the Community feature which will bring together people from all over the world in a group chatting forum. In simple words, this app will be helpful to those curious about their feelings or those seeking help to understand and control their feelings.
 
 ## Live demo
-daxi-aabf4.firebaseapp.com <br>
+https://daxi-aabf4.firebaseapp.com <br>
 [There might be some glitches but, with more time, we can fix it.]
 
 ## Sign in page
