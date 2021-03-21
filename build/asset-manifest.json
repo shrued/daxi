@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.186c66e2.chunk.css",
+    "main.js": "/static/js/main.e27b3ae7.chunk.js",
+    "main.js.map": "/static/js/main.e27b3ae7.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.0465e288.js",
+    "runtime-main.js.map": "/static/js/runtime-main.0465e288.js.map",
+    "static/css/2.2d1880ae.chunk.css": "/static/css/2.2d1880ae.chunk.css",
+    "static/js/2.8e8b6445.chunk.js": "/static/js/2.8e8b6445.chunk.js",
+    "static/js/2.8e8b6445.chunk.js.map": "/static/js/2.8e8b6445.chunk.js.map",
+    "static/js/3.6321c526.chunk.js": "/static/js/3.6321c526.chunk.js",
+    "static/js/3.6321c526.chunk.js.map": "/static/js/3.6321c526.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.2d1880ae.chunk.css.map": "/static/css/2.2d1880ae.chunk.css.map",
+    "static/css/main.186c66e2.chunk.css.map": "/static/css/main.186c66e2.chunk.css.map",
+    "static/js/2.8e8b6445.chunk.js.LICENSE.txt": "/static/js/2.8e8b6445.chunk.js.LICENSE.txt",
+    "static/media/7cups.20f2300f.png": "/static/media/7cups.20f2300f.png",
+    "static/media/articles_chatbot.c2452e69.png": "/static/media/articles_chatbot.c2452e69.png",
+    "static/media/betterhelp.5c7c7816.png": "/static/media/betterhelp.5c7c7816.png",
+    "static/media/moodboard.9d527c07.png": "/static/media/moodboard.9d527c07.png",
+    "static/media/moodpath.db44118e.png": "/static/media/moodpath.db44118e.png",
+    "static/media/onther.bab2e70a.png": "/static/media/onther.bab2e70a.png",
+    "static/media/pride.11bdbe96.png": "/static/media/pride.11bdbe96.png",
+    "static/media/reflection.d63e8775.png": "/static/media/reflection.d63e8775.png",
+    "static/media/regain.5f1bdce5.png": "/static/media/regain.5f1bdce5.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0465e288.js",
+    "static/css/2.2d1880ae.chunk.css",
+    "static/js/2.8e8b6445.chunk.js",
+    "static/css/main.186c66e2.chunk.css",
+    "static/js/main.e27b3ae7.chunk.js"
+  ]
+}
