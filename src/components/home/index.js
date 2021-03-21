@@ -1,6 +1,8 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { UserContext } from "../../providers/userProvider";
 import { auth } from "../../firebase/firebase";
+import { init } from "ityped";
+
 import {
   CloudWave,
   Placard,
@@ -21,11 +23,23 @@ export default function Home() {
   const user = useContext(UserContext);
   const { displayName } = user;
 
+  useEffect(() => {
+    const myElement = document.querySelector("#myElement");
+    init(myElement, {
+      showCursor: true,
+      strings: ["your mind.", "yourself.", "others."],
+      backDelay: 1000,
+    });
+  }, []);
+
   return (
     <>
       <CloudWave>
         <div>
-          <WaveContent>Go easy on your mind.</WaveContent>
+          <WaveContent>
+            Go easy on&nbsp;
+            <div id="myElement"></div>
+          </WaveContent>
           <div id="wave">
             <svg width="100%" height="150px" fill="none">
               <path fill="white">
