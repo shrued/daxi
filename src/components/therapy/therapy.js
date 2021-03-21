@@ -29,7 +29,7 @@ export const SubTitle = styled.p`
   text-align: center;
   line-height: 1em;
   font-size: 19px;
-  font-weight: 100;
+  font-weight: 600;
   letter-spacing: 0.02rem;
   color: #404353;
 `;

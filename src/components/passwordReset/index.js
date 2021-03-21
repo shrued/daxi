@@ -46,13 +46,13 @@ const PasswordReset = () => {
         <FormContainer action="">
           {emailHasBeenSent && <div>An email has been sent to you!</div>}
           {error !== null && <Error>{error}</Error>}
-          <FormLabel htmlFor="userEmail">Email:</FormLabel>
+          <FormLabel htmlFor="userEmail">Enter email id:</FormLabel>
           <FormInput
             type="email"
             name="userEmail"
             id="userEmail"
             value={email}
-            placeholder="Input your email"
+            placeholder=""
             onChange={onChangeHandler}
           />
           <FormButton
@@ -64,7 +64,7 @@ const PasswordReset = () => {
           </FormButton>
         </FormContainer>
         <SubTitle>
-          <a href="/">&larr; back to sign in page</a>
+          <a href="/">&larr; Back to sign in page</a>
         </SubTitle>
       </SubContainer>
     </Container>

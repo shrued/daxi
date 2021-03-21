@@ -44,7 +44,7 @@ export const Title = styled.p`
 export const SubTitle = styled.p`
   text-align: center;
   line-height: 1em;
-  font-weight: 100;
+  font-weight: 500;
   letter-spacing: 0px;
   letter-spacing: 0.02rem;
   color: #404353;
@@ -87,7 +87,7 @@ export const FormInput = styled.input`
   margin-bottom: 10px;
   line-height: 2em;
   color: black;
-  font-weight: lighter;
+  font-weight: 300;
   font-size: 1.2rem;
   border-bottom: 1px solid rgb(64, 67, 83, 0.65);
   width: 100%;
