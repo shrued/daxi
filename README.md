@@ -16,6 +16,7 @@ A significant percent of the world's population is struggling with mental and sl
 - React Simple Chatbot
 - React Calendar
 - Mock API
+- iTyped
 
 ## Features
 - Sign in/Sign up with email/password sign-in as well as Google pop-up sign-in including a forgot password option 
@@ -37,12 +38,12 @@ The data collected using the aforementioned features can be used to provide a pl
 ![Screenshot from 2021-03-20 15-46-35](https://user-images.githubusercontent.com/52789421/111866520-12e38d80-8994-11eb-8a63-18724eed2fb8.png)
 
 ## Home page
-![Screenshot from 2021-03-20 16-00-15](https://user-images.githubusercontent.com/52789421/111866714-70c4a500-8995-11eb-8edc-cb6e4d56a6eb.png)
+![Screenshot from 2021-03-21 10-35-10](https://user-images.githubusercontent.com/52789421/111894513-298bf200-8a31-11eb-8f15-5274581fd10a.png)
 
 ![Screenshot from 2021-03-20 21-16-51](https://user-images.githubusercontent.com/52789421/111875793-9cf61b00-89c1-11eb-93a9-5bba1455ccdf.png)
 
 ## Chatbot
-![Screenshot from 2021-03-20 21-18-47](https://user-images.githubusercontent.com/52789421/111875850-e181b680-89c1-11eb-9d25-a852b3d887b1.png)
+![Screenshot from 2021-03-21 10-36-33](https://user-images.githubusercontent.com/52789421/111894536-54764600-8a31-11eb-81b3-3a1e1c489774.png)
 
 ## Reflection page
 ![Screenshot from 2021-03-20 15-46-15](https://user-images.githubusercontent.com/52789421/111866553-54743880-8994-11eb-999f-b1d4038ba2e6.png)
